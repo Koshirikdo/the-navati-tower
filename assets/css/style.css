@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.header {
+    width: 100%; 
+    background-color: orange;
+    padding-top: 5px;
+    padding-bottom: 75px;
+    border: 1px solid black;
+}
+
+body {
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: #3a3a3a;
+}
+
+h1, h2 {
+    font-family: Oswald, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #252525;
+}
+
+#logo {
+    float: left;
+    font-size: 280%;
+    padding-left: 10px;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+}
+
+#menu li {
+    float:right;
+    list-style-type: none;
+    margin-right: 30px;    
+}
+
+#menu, #logo {
+    line-height: 75px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.active {
+    border-bottom: 1px solid #3a3a3a;
+}
+
+#hero-image {
+    position:relative;
+    top:-50px;
+    width:100%;
+    background: url("../images/hero-image.jpg") no-repeat center center;
+}
+
+#hero-image {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+#cover-text, #cover-text h2 {
+    transform: scale(1);
+}
+
+@keyframes hero-zoom {
+    from {
+        transform: scale(0.9);
+}
+to {
+    transform: scale(1);
+}
+}
+
+#history {
+    position: relative;
+    line-height: 30px;
+    text-align: center;
+    text-justify: inter-word;
+    padding-left:200px;
+    padding-right:200px;
+    padding-bottom: 100px;
+}
+  
+#footer {
+    width: 100%;
+    border: 1px solid black;
+    background-color: orange;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#address {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    border: 1px black solid;
+    background-color:lightblue;
+}
+
+#contacts {
+    text-align:center;
+    background-color:bisque;
+    border: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#opening {
+    text-align:center;
+    border: 1px black solid;
+    padding-top:10px;
+    padding-bottom:10px;
+    background-color: rgb(147, 236, 189);
+}
